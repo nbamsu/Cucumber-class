@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src\\test\\resources\\com.cucumber.features.Etsy",
+        features = "src\\test\\resources\\com.cucumber.features.Etsy\\EtsyExampleTable.feature",
         glue = "StepDefinitions\\EtsyStepDefs",
         monochrome = true,
         dryRun = false
