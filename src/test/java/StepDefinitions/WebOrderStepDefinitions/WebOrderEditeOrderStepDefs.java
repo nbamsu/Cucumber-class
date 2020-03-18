@@ -1,19 +1,23 @@
 package StepDefinitions.WebOrderStepDefinitions;
 
 import Pages.WebOrderPage.AllOrdersPage;
+import Pages.WebOrderPage.AllProductPage;
 import Pages.WebOrderPage.EditOrderPage;
+import Utils.ConfigReader;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class WebOrderEditeOrderStepDefs {
 
     EditOrderPage editOrderPage=new EditOrderPage();
     AllOrdersPage allOrdersPage=new AllOrdersPage();
 
-
-
     @Then("the user click edit button")
     public void the_user_click_edit_button() {
+    editOrderPage.editButton.click();
         
 
     }
@@ -59,6 +63,13 @@ public class WebOrderEditeOrderStepDefs {
 
     @Then("the user validate update order info")
     public void the_user_validate_update_order_info() {
+        List<WebElement> orderInfo=editOrderPage.orderInfo;
+        String actualNames=orderInfo.get(2).getText();
+        String actualStreetName = orderInfo.get(5).getText();
+        String actualCityName = orderInfo.get(6).getText();
+        String actualState = orderInfo.get(7).getText();
+        String actualZip = orderInfo.get(8).getText();
+
 
     }
 

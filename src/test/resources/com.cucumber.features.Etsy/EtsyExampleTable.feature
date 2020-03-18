@@ -1,7 +1,9 @@
+
 Feature: Example Table Practice
 
   Background: this step will navigate Etsy before every scenario
     Given the user navigate to the Etsy
+
 
   Scenario Outline: validate Etsy title after search
     When the user search with "<SearchValue>"

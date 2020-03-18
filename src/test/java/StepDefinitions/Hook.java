@@ -18,12 +18,12 @@ public class Hook {
     public void setUpDriver(){
         driver = Driver.getDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().window().fullscreen();
-        System.out.println("his is from Before annotation ");
+      //  driver.manage().window().fullscreen();
+        System.out.println("This is from Before annotation ");
     }
     @After
     public void tearDown(Scenario scenario) throws IOException {
-        System.out.println("this is After annotation");
+        System.out.println("This is After annotation");
         if (scenario.isFailed()){
             BrowserUtils.takeScreenShot();
         }

@@ -16,5 +16,8 @@ public class AllOrdersPage {
     public WebElement headerTitle;
     @FindBy(xpath = "//td[.='123456789012']/following-sibling::td[2]/input")
     public WebDriver editButton;
+    @FindBy(xpath = "//a[.='View all orders']")
+    public WebElement allOrdersButton;
+
 
 }

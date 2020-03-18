@@ -1,5 +1,6 @@
+@Regression
 Feature: WebOrders login functionality
-
+@positive @Smoke @TC-18
   Scenario: WebOrders login positive testing1
     Given the user navigate to the web orders page
     When the user provide valid username

@@ -1,5 +1,7 @@
+@Regression
 Feature: Creating new file
-  @Order @smoke
+
+  @Order @Smoke @TC-17
   Scenario: Product page  testing1
     Given the user navigate to the web orders page
     When the user provide valid username "Tester"

@@ -29,6 +29,7 @@ public class EtsySearchStepDefs {
     public void the_user_validate(String expectedTitle) {
       String actualTitle=driver.getTitle();
         Assert.assertTrue(actualTitle.equals(expectedTitle));
+
     }
 
 

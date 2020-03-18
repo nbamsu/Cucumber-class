@@ -12,6 +12,9 @@ public class EditOrderPage {
     public EditOrderPage(){
         PageFactory.initElements(Driver.getDriver(),this);}
 
+        @FindBy(xpath = "//td[.='123456789012']/following-sibling::td[2]/input")
+        public WebElement editButton;
+
         @FindBy(id = "ctl00_MainContent_fmwOrder_txtName")
         public WebElement customerName;
         @FindBy(id="ctl00_MainContent_fmwOrder_TextBox2")

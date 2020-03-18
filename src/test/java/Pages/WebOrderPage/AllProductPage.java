@@ -13,25 +13,9 @@ public class AllProductPage {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
-
     @FindBy(xpath = "//table[@class='ProductsTable']//tr")
     public List<WebElement> productList;
 
-    //    public List<String> getProductList(){
-//        List<String> productdata=new ArrayList();
-//        for (WebElement element:productList){
-//            productdata.add(element.getText());
-//        }
-//        return productdata;
-//}
-//    public List<String> expected(){
-//        List<String>  expectedList=new ArrayList<>();
-//        expectedList.add("Product name Price Discount");
-//        expectedList.add("MyMoney $100 8%");
-//        expectedList.add("FamilyAlbum $80 15%");
-//        expectedList.add("ScreenSaver $20 10%");
-//        return expectedList;
-//    }
     public List<String> getProductList() {
         List<String> productData = new ArrayList<>();
         for (WebElement element : productList) {
