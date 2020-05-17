@@ -66,13 +66,13 @@ public class BrowserUtils {
         WebDriverWait wait=new WebDriverWait(driver,seconds);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
-//    public static void takeScreenShot() throws IOException {
-//        File scr=((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.FILE);
-//        File destinationFile=new File("ScreenShotFile\\"+System.currentTimeMillis()+".png");
-//        FileUtils.copyFile(scr,destinationFile);
-//    }
+    public static void takeScreenShot() throws IOException {
+        File scr=((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.FILE);
+        File destinationFile=new File("ScreenShotFile\\"+System.currentTimeMillis()+".png");
+        FileUtils.copyFile(scr,destinationFile);
+    }
     /*
-    Create the method wich is taking one parameter as list of WebElemts
+    Create the method which is taking one parameter as list of WebElemts
     This method will return list of String from webElelment
      */
     public static List<String> getText(List<WebElement> elements){

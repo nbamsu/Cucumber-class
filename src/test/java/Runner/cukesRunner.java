@@ -9,9 +9,10 @@ import org.junit.runner.RunWith;
         features = "src\\test\\resources",
         //C:\Users\Nurkulov\Downloads\Cucumber-Class\src\test\resources\IceHRM\DataTableMap.feature
         glue = "StepDefinitions",
-        dryRun = false,
+        dryRun = true,
         monochrome = true,
         tags="@TC-15"
+        //snippets=SnippetTyoe
 
 
 )
